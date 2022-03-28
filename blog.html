@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Our Blogs</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
+      <img class = "fun" src="images/menu.png" alt="" onclick="show_menu()">
+      <div class="nav_links" id="navLinks">
+        <img class = "fun" src="images/close.png" alt="" onclick="exit_menu()">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1 class = "main_head">Our Certificates & Online Programs For 2022</h1>
+    </div>
+  </section>
+
+  <section class = "certificates">
+    <div class="certificates_left">
+      <img src="images/certificate.jpg" alt="">
+      <h3>Our Certificates & Online Programs For 2022</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quidem odit consectetur, similique voluptatibus hic ullam sunt ab commodi cumque.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quaerat dolores laudantium debitis, vitae itaque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat nemo soluta dolorem voluptas consequatur, tempora voluptatum reprehenderit dolor molestiae eveniet commodi dolores quibusdam ipsa accusamus repellendus maxime quos, nulla exercitationem alias quo aut! Placeat voluptas facilis, a, quisquam nihil dolorum quis, at cum voluptate aliquam id repellendus hic dolores!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi debitis, cupiditate. Cupiditate, voluptas reprehenderit. Tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores recusandae saepe consectetur commodi, facilis, aspernatur dicta magni quisquam labore nisi sequi! Expedita mollitia, rerum adipisci soluta officia ex eius ipsam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sapiente?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloremque quaerat laudantium nam recusandae aliquid, id error! Sint est dicta minus sequi in inventore debitis.</p>
+
+      <div class="formss">
+        <h3>Leave a comment</h3>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Enter Name">
+          <input type="text" name="" value="" placeholder="Enter email">
+          <textarea name="name" rows="4" cols="60" placeholder="Your comment"></textarea>
+        </form>
+        <button class = "post_btn" type="button" name="button">POST COMMENT</button>
+      </div>
+    </div>
+
+    <div class="Certificates_right">
+      <h4 class = "table_head">Post Categories</h4>
+      <table>
+        <tr>
+          <td>Buisness Analytics</td>
+          <td>21</td>
+        </tr>
+
+        <tr>
+          <td>Data Science</td>
+          <td>28</td>
+        </tr>
+
+        <tr>
+          <td>Machine Learning</td>
+          <td>15</td>
+        </tr>
+
+        <tr>
+          <td>Computer Science</td>
+          <td>34</td>
+        </tr>
+
+        <tr>
+          <td>AutoCAD</td>
+          <td>42</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa neque atque deserunt et sequi eligendi. Modi possimus eaque maxime optio ipsa iure commodi recusandae numquam?</p>
+    <div class="social_media">
+      <a href="https://www.facebook.com/profile.php?id=100006316920526" target="_blank"><img src="images/fb.png" alt=""></a>
+      <a href="#" target="_blank"><img src="images/twit.png" alt=""></a>
+      <a href="https://www.instagram.com/tanu__29_06/?hl=en" target="_blank"><img src="images/insta.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/tanmay-deo/" target="_blank"><img src="images/li.png" alt=""></a>
+    </div>
+    <p>made with ❤️ by Tanmay Deo</p>
+  </footer>
+
+  <script>
+    var navLinks = document.getElementById("navLinks")
+
+    function show_menu(){
+      navLinks.style.right = "0" ;
+    }
+
+    function exit_menu(){
+      navLinks.style.right = "-200px" ;
+    }
+
+  </script>
+</body>
+
+</html>

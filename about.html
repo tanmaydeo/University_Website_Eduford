@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+  <title>About Us</title>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
+      <img class = "fun" src="images/menu.png" alt="" onclick="show_menu()">
+      <div class="nav_links" id="navLinks">
+        <img class = "fun" src="images/close.png" alt="" onclick="exit_menu()">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1 class = "main_head">About Us</h1>
+    </div>
+  </section>
+
+
+  <section class = "university">
+    <div class="first">
+      <h1 class = "main_head2">We are the world's largest university</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis debitis, ratione vitae quod quia facilis tempore expedita recusandae, itaque. In repudiandae, labore cumque nesciunt, temporibus dolor rerum quia. In distinctio quo corporis voluptate voluptatum!</p>
+      <button type="button" name="button">EXPLORE NOW</button>
+    </div>
+
+    <img class = "about_img" src="images/about.jpg" alt="">
+  </section>
+
+  <footer>
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa neque atque deserunt et sequi eligendi. Modi possimus eaque maxime optio ipsa iure commodi recusandae numquam?</p>
+    <div class="social_media">
+      <a href="https://www.facebook.com/profile.php?id=100006316920526" target="_blank"><img src="images/fb.png" alt=""></a>
+      <a href="#" target="_blank"><img src="images/twit.png" alt=""></a>
+      <a href="https://www.instagram.com/tanu__29_06/?hl=en" target="_blank"><img src="images/insta.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/tanmay-deo/" target="_blank"><img src="images/li.png" alt=""></a>
+    </div>
+    <p>made with ❤️ by Tanmay Deo</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script>
+    var navLinks = document.getElementById("navLinks")
+
+    function show_menu(){
+      navLinks.style.right = "0" ;
+    }
+
+    function exit_menu(){
+      navLinks.style.right = "-200px" ;
+    }
+
+  </script>
+</body>
+
+</html>
