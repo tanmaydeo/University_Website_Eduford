@@ -1,0 +1,281 @@
+*{
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  width: 100% ;
+  min-height: 50vh ;
+  background-image: linear-gradient(rgba(0 , 0 , 25 , 0.65) , rgba(0 , 0,25,0.65)) , url('../images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo{
+  width: 160px ;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 5% ;
+  align-items: center;
+  text-align: center;
+}
+
+.nav_links{
+  flex : 1 ;
+  text-align: right;
+}
+
+.nav_links ul li{
+  list-style: none;
+  padding: 8px 15px ;
+  display: inline-block;
+}
+
+.nav_links ul li a{
+  color: white ;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size: 15px ;
+}
+
+.nav_links ul li a::after{
+  content: '' ;
+  width: 0% ;
+  height: 2px ;
+  background-color: #f44336 ;
+  display: block ;
+  margin: auto;
+  transition: 0.5s ;
+}
+
+.nav_links ul li a:hover::after{
+  width: 100% ;
+}
+
+.content{
+  width: 100% ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+  color: white ;
+}
+
+.main_head{
+  font-size: 2rem ;
+  margin-bottom: 15px ;
+}
+
+.fun{
+  display: none ;
+  width: 20px ;
+}
+
+@media (max-width : 500px) {
+  .logo{
+    width: 130px ;
+    margin-top: 10px ;
+  }
+
+  .nav_links{
+    position: absolute;
+    width: 200px ;
+    background-color:  #f44336 ;
+    height: 100vh ;
+    top: 0 ;
+    right: -200px ;
+    z-index: 2 ;
+    transition: 0.5s ;
+  }
+
+  .fun{
+    display: block ;
+    margin: 12px ;
+  }
+
+  .nav_links ul li{
+    display: block ;
+    text-align: left ;
+  }
+
+  .nav_links ul{
+    padding: 20px ;
+  }
+
+  .main_head{
+    font-size: 1.5rem ;
+  }
+}
+
+/* Certificates */
+
+.certificates{
+  width: 80% ;
+  height: auto ;
+  display: flex ;
+  margin: auto ;
+  padding: 100px 0;
+}
+
+.certificates img{
+  height: 500px ;
+}
+
+.certificates p{
+  color : grey ;
+  padding: 15px 0 ;
+}
+
+.certificates h3{
+  padding: 15px 0 ;
+  font-size: 1.5rem ;
+  font-weight: 600 ;
+}
+
+.certificates_left{
+  width: 70% ;
+}
+
+.table_head{
+  text-align: center;
+  margin-bottom: 10px ;
+  background-color: #f44336 ;
+  color: white ;
+  font-weight: 500 ;
+  padding: 5px ;
+}
+
+table{
+  width: 100% ;
+}
+
+.Certificates_right{
+  width: 35% ;
+  overflow: hidden;
+}
+
+td{
+  padding: 10px 0 ;
+  color : #5a5959 ;
+}
+
+.formss{
+  border: 1px solid grey ;
+  padding-left: 25px ;
+  margin-top: 20px ;
+}
+
+input , textarea{
+  display: block ;
+  padding: 15px 8px;
+  width: 90% ;
+  margin-bottom: 20px ;
+  background-color: #efefef ;
+  border: 0 ;
+  outline: none ;
+}
+
+ textarea:hover{
+  border: 0;
+}
+
+.post_btn{
+  padding: 10px 20px ;
+  margin-bottom: 15px ;
+  border: 1px solid #f44336 ;
+  color : #f44336 ;
+  transition: 0.5s ;
+  cursor: pointer;
+}
+
+.post_btn:hover{
+  background-color: #f44336 ;
+  color : white ;
+}
+
+.formss h3{
+  font-size: 1.25rem ;
+}
+
+@media (max-width : 500px) {
+
+  .certificates{
+    flex-direction: column;
+    padding: 80px 0 ;
+  }
+
+  .certificates img{
+    height: 200px ;
+  }
+
+  .certificates_left{
+    width: 100% ;
+  }
+
+  .certificates h3{
+    padding: 15px 0 ;
+    font-size: 1rem ;
+    font-weight: 600 ;
+    text-align: center;
+  }
+
+  .certificates p{
+    line-height: 20px ;
+    font-size: 0.9rem ;
+  }
+
+  .Certificates_right{
+    width: 100% ;
+    margin-top: 50px ;
+  }
+}
+
+/* Footer */
+footer{
+  width: 60% ;
+  height: 32vh ;
+  color: black ;
+  margin: 4rem auto 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social_media{
+  display: flex;
+  justify-content: center;
+}
+
+.social_media a img{
+  height: 17px;
+}
+
+.social_media a{
+  padding: 20px ;
+  margin-bottom: 10px ;
+}
+
+footer h3{
+  margin-bottom: 2rem ;
+}
+
+footer p{
+  color : grey ;
+  font-size: 0.9rem ;
+  margin-bottom: 1.2rem ;
+}
+
+@media (max-width : 500px) {
+  footer{
+    width: 85% ;
+  }
+}

@@ -1,0 +1,214 @@
+*{
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  width: 100% ;
+  min-height: 50vh ;
+  background-image: linear-gradient(rgba(0 , 0 , 25 , 0.65) , rgba(0 , 0,25,0.65)) , url('../images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo{
+  width: 160px ;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 5% ;
+  align-items: center;
+  text-align: center;
+}
+
+.nav_links{
+  flex : 1 ;
+  text-align: right;
+}
+
+.nav_links ul li{
+  list-style: none;
+  padding: 8px 15px ;
+  display: inline-block;
+}
+
+.nav_links ul li a{
+  color: white ;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size: 15px ;
+}
+
+.nav_links ul li a::after{
+  content: '' ;
+  width: 0% ;
+  height: 2px ;
+  background-color: #f44336 ;
+  display: block ;
+  margin: auto;
+  transition: 0.5s ;
+}
+
+.nav_links ul li a:hover::after{
+  width: 100% ;
+}
+
+.content{
+  width: 100% ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+  color: white ;
+}
+
+.main_head{
+  font-size: 2rem ;
+  margin-bottom: 15px ;
+}
+
+.fun{
+  display: none ;
+  width: 20px ;
+}
+
+@media (max-width : 500px) {
+  .logo{
+    width: 130px ;
+    margin-top: 10px ;
+  }
+
+  .nav_links{
+    position: absolute;
+    width: 200px ;
+    background-color:  #f44336 ;
+    height: 100vh ;
+    top: 0 ;
+    right: -200px ;
+    z-index: 2 ;
+    transition: 0.5s ;
+  }
+
+  .fun{
+    display: block ;
+    margin: 12px ;
+  }
+
+  .nav_links ul li{
+    display: block ;
+    text-align: left ;
+  }
+
+  .nav_links ul{
+    padding: 20px ;
+  }
+}
+
+.university{
+  width: 85% ;
+  height: auto;
+  margin: auto;
+  padding: 80px 0 ;
+  display: flex;
+  flex-basis: 50% ;
+}
+
+.first{
+  padding: 15px ;
+}
+
+.about_img{
+  height:400px ;
+}
+
+.main_head2{
+  font-size: 2.4rem ;
+  font-weight: 500 ;
+  margin-bottom: 15px ;
+}
+
+.first p{
+  color : grey ;
+  margin-bottom: 30px ;
+}
+
+.university button{
+  padding: 10px 20px ;
+  border: 1px solid #f44336 ;
+  color: #f44336 ;
+  background-color: white ;
+  cursor: pointer;
+  transition: 1s ;
+}
+
+.university button:hover{
+  background-color: #f44336 ;
+  color: white ;
+}
+
+@media (max-width : 500px) {
+  .university{
+    flex-direction: column;
+    padding: 60px 0 ;
+  }
+
+  .about_img{
+    height:220px ;
+    margin-top: 10px ;
+  }
+
+  .main_head2{
+    font-size: 2.2rem ;
+    font-weight: 500 ;
+    margin-bottom: 15px ;
+  }
+}
+
+/* Footer */
+footer{
+  width: 60% ;
+  height: 32vh ;
+  color: black ;
+  margin: 4rem auto 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social_media{
+  display: flex;
+  justify-content: center;
+}
+
+.social_media a img{
+  height: 17px;
+}
+
+.social_media a{
+  padding: 20px ;
+  margin-bottom: 10px ;
+}
+
+footer h3{
+  margin-bottom: 2rem ;
+}
+
+footer p{
+  color : grey ;
+  font-size: 0.9rem ;
+  margin-bottom: 1.2rem ;
+}
+
+@media (max-width : 500px) {
+  footer{
+    width: 85% ;
+  }
+}
